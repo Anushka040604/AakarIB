@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.back-btn-text-dashboard{
+    color: #A3A3A3;
+}
+.back-btn-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #0061A1;
+}
+.back-btn-text {
+    margin-left: 20px;
+}
+.back-btn-text-dashboard {
+    color: #A3A3A3;
+}

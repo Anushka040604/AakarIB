@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.table-container {
+    /* margin: 16px; */
+    border: 1px solid #948e8e;
+    border-radius: 10px;
+    border-radius: 4px;
+  }
+  
+.table-header-cell {
+    border: 1px solid #948e8e;
+    font-weight: bold;
+    background-color: #e0f0ff;
+  }
+  
+.table-cell {
+    border: 1px solid #948e8e;
+    padding: 8px;
+  }
+  
+  /* Optional: Add a border around the entire table */
+  .MuiTable-root {
+    border-collapse: collapse;
+  }
+
+
+.drop-down-section{
+
+    height: auto;
+
+}
+
+
+
+.new-purchase-btn {
+    height: 40px;
+    width: 200px;
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+    border: 2px solid #0061A1;
+    border: 2px solid #71a3c5;
+    background-color: #ffffff;
+    color: #0061a1;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.drop-down-section-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 5px ;
+
+}
+.drop-down-section-header-title{
+  font-size: large;
+  font-weight: 600;
+
+  color: #5a5959;
+
+}
+
+.drop-down-section-body{
+  
+  margin: 8px auto;
+  margin-bottom: 20px;
+
+}
+
+.save-detail-btn .save-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+  
+
+

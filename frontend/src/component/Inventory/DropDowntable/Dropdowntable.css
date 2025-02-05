@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.table-container {
+    
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px !important;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: #002773;
+}
+
+.MuiTablePagination-root {
+    margin-top: 20px;
+}
+
+
+.table-row {
+    padding: 14px !important;
+}
+
+.custom-scrollbar {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(92, 97, 99, 0.06);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(168, 166, 166, 0.43);
+}
+
+.dropdown-details {
+    background-color: #e0f0ff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+  }
+  
+
+  /* Active row and dropdown styling */
+.active-row {
+    background-color: #e7edf3; /* Light blue background for the row */
+}
+
+.active-row .dropdown-content {
+    display: block; /* Show dropdown when row is active */
+    background-color:#e7edf3; /* Light blue background for dropdown */
+}
+
+/* Hide the dropdown by default */
+.dropdown-content {
+    display: none;
+}
+
+/* Additional hover effects if needed */
+.table-container .MuiTableRow-root:hover {
+    background-color: #e0f0ff; /* Lighter blue for hover */
+}
+
+
+.item-page-navigation {
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    
+}
+   
+
+.each-table-row:hover  .item-page-navigation{
+    opacity: 1; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

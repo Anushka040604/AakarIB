@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.add-item-dashboard{
+   
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 6px;
+
+    background-color: #FFFFFF;
+}
+
+
+.add-item-body{
+    /* margin-top: 25px; */
+    margin-bottom: 25px;
+    padding: 20px 25px 10px 25px;
+    border-radius: 20px;
+}
+.add-item-body .head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 5px ;
+}
+.add-item-body .head .save-item-detail-btn{
+    height: 40px;
+    width: 200px;
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+    
+    border: 2px solid #71a3c5;
+    background-color: #0061a1;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.add-item-body .head .delete-icon{
+
+    /* align-self: flex-start; */
+    cursor: pointer;
+    margin-left: auto;
+    font-size: large;
+   
+     color: #625f5f;
+     justify-self: end;
+}
+
+
+.item-details{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+.table-section{
+    padding: 20px;
+}
+
+
+
+/* purchase detail section */
+
+.item-page-purchase-detail-section .purchase-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 5px ;
+}
+
+.item-page-purchase-detail-section   .purchase-header-title {
+    font-size: large;
+    font-weight: 700;
+  
+   color: rgb(125, 125, 125);
+    
+}
+
+
