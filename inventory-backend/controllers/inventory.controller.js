@@ -2,11 +2,7 @@ import asyncHandler from "../utils/asyncHandler.js";
 import ApiError from "../utils/ApiErrors.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { connection } from "../db/index.js";
-<<<<<<< HEAD
-=======
-import { upload } from "../utils/multer.js";
-import dayjs from 'dayjs'; 
->>>>>>> aabd336 (Added frontend and updated inventory-backend)
+
 
 
 const additemdetails = asyncHandler(async (req, res) => {
@@ -95,11 +91,7 @@ const fetchitemdetails = asyncHandler(async (req, res) => {
             }
 
             if (results.length === 0) {
-<<<<<<< HEAD
-                return res.status(404).json(new ApiError(404, "No item details found."));
-=======
                 return res.status(200).json(new ApiResponse(200, [], "No item details found.")); // Return an empty array with success message
->>>>>>> aabd336 (Added frontend and updated inventory-backend)
             }
 
             res.status(200).json(new ApiResponse(200, results, "Item details fetched successfully."));
@@ -111,10 +103,7 @@ const fetchitemdetails = asyncHandler(async (req, res) => {
 });
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> aabd336 (Added frontend and updated inventory-backend)
 const updateitemdetails = asyncHandler(async (req, res) => {
     const { itemId } = req.params;
     const {
@@ -248,10 +237,7 @@ const deleteitemdetails = asyncHandler(async (req, res) => {
                         }
 
                         res.status(200).json(new ApiResponse(200, `Item ID ${itemId} deleted successfully.`));
-<<<<<<< HEAD
-=======
                         
->>>>>>> aabd336 (Added frontend and updated inventory-backend)
                     });
                 });
             });
@@ -261,17 +247,6 @@ const deleteitemdetails = asyncHandler(async (req, res) => {
 
 
 const addPurchaseDetails = asyncHandler(async (req, res) => {
-<<<<<<< HEAD
-
-    const { itemId, purchase_date, supplier, purchase_order, challan, quantity } = req.body;
-
-    // Validate the required fields
-    if (!purchase_date || !supplier || !challan || !quantity || !itemId) {
-        return res.status(400).json(new ApiError(400, "All fields (purchase date, supplier, challan, quantity, and itemId) are required."));
-    }
-
-    // Insert query (no need to include purchaseId, it is auto-increment)
-=======
     const { itemId, supplier, purchase_date ,quantity } = req.body;
 
     // Check for required fields and return an error if any are missing
@@ -297,24 +272,11 @@ const addPurchaseDetails = asyncHandler(async (req, res) => {
     }
 
 
->>>>>>> aabd336 (Added frontend and updated inventory-backend)
     const insertPurchaseQuery = `
         INSERT INTO inventory.purchasedetails (itemId, purchase_date, supplier, purchase_order, challan, quantity) 
         VALUES (?, ?, ?, ?, ?, ?)
     `;
 
-<<<<<<< HEAD
-    connection.query(insertPurchaseQuery, [itemId, purchase_date, supplier, purchase_order, challan, quantity], (insertError, result) => {
-        if (insertError) {
-            console.error("Error inserting purchase into purchasedetails:", insertError);
-            return res.status(500).json(new ApiError(500, "Error inserting purchase into purchasedetails."));
-        }
-
-        res.status(201).json(new ApiResponse(200, result.insertId, "Purchase details added successfully."));
-    });
-});
-
-=======
     // Perform the query to insert data
     connection.query(insertPurchaseQuery, [itemId, purchase_date, supplier, purchase_order, challan, quantity], (insertError, result) => {
         if (insertError) {
@@ -337,7 +299,6 @@ const addPurchaseDetails = asyncHandler(async (req, res) => {
 });
 
 
->>>>>>> aabd336 (Added frontend and updated inventory-backend)
 const updatePurchaseDetails = asyncHandler(async (req, res) => {
     const { id } = req.params;
     const { purchase_date, supplier, purchase_order, challan, quantity } = req.body;
@@ -395,11 +356,7 @@ const fetchPurchaseDetails = asyncHandler(async (req, res) => {
         }
 
         if (results.length === 0) {
-<<<<<<< HEAD
-            return res.status(404).json(new ApiError(404, "Purchase details not found."));
-=======
             return res.status(200).json(new ApiResponse(200, [], "No item details found.")); // Return an empty array with success message
->>>>>>> aabd336 (Added frontend and updated inventory-backend)
         }
 
         res.status(200).json(new ApiResponse(200, results, "Purchase details retrieved successfully."));
